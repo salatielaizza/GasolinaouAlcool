@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="gasolinaoualcool.cursoandroid.com.gasolinaoualcool.MainActivity"
+    android:background="@android:color/background_dark">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="Preço Álcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView1"
+        android:textAllCaps="true"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:text="Preço Gasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:padding="15dp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/textView1"
+        android:id="@+id/precoAlcoolID"
+        android:background="@android:color/background_light"
+        android:padding="@dimen/padding_precoCombustivel"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_PrecoCombustivel"
+        android:layout_marginBottom="@dimen/margin_PrecoCombustivel"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/precoGasolinaID"
+        android:background="@android:color/background_light"
+        android:padding="@dimen/padding_precoCombustivel"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:text="@string/textoBotaoVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precoGasolinaID"
+        android:layout_marginTop="28dp"
+        android:id="@+id/botaoVerificarID"
+        android:layout_alignRight="@+id/precoGasolinaID"
+        android:layout_alignEnd="@+id/precoGasolinaID"
+        android:layout_alignLeft="@+id/precoAlcoolID"
+        android:layout_alignStart="@+id/precoAlcoolID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botaoVerificarID"
+        android:layout_alignLeft="@+id/botaoVerificarID"
+        android:layout_alignStart="@+id/botaoVerificarID"
+        android:layout_marginTop="31dp"
+        android:height="25dp"
+        android:id="@+id/textoResultadoID"
+        android:layout_alignRight="@+id/botaoVerificarID"
+        android:layout_alignEnd="@+id/botaoVerificarID"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
